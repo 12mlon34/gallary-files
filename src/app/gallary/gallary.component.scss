@@ -1,0 +1,17 @@
+.container{
+    text-align: center;
+    background-color: rgb(204, 204, 233);
+}
+h1{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: cursive;
+    padding: 20px 0;
+    color: green;
+    border: 5px solid red;
+    background-color: lighten($color: #000000, $amount: 0);
+}
+
+img{
+    margin: 0 0 50px 50px ;
+}
