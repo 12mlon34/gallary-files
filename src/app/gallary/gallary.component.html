@@ -1,12 +1,68 @@
 
-<section class="container">
+<section class="container-fluid text-center content">
 
 
 
 <h1>this is our gallary </h1>
-<div *ngFor="let item of ranarr"  class="wow fadeInUp" data-wow-delay="0.5s" data-wow-offset="100">
-    <img src="{{item.url}}">
-    <img src="{{item.url}}">
 
+
+    <div class="row ul-content">
+     
+        
+            <ul class="list">
+                <li >
+                <a class="nav-link" href="#">all</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">web</a>
+            
+                <li class="nav-item">
+                <a class="nav-link " href="#">photography</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">photography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">social</a>
+                        </li>
+            </ul>
+        
+        
+    </div>
+    <div class="row img-content">
+
+    </div>
+<div class="image-header col-lg-3 col-md-6 col-sm-6 wow fadeInUp" *ngFor="let item of ranarr" 
+  data-wow-delay="0.5s" data-wow-offset="100">
+    
+        <img src="{{item.url}}">
+        <div class="overlay">
+            <p>Gallary</p>
+        </div>
 </div>
+<div class="image-header col-lg-3 col-md-6 col-sm-6 wow fadeInUp" *ngFor="let item of ranarr" 
+  data-wow-delay="0.5s" data-wow-offset="100">
+    
+        <img src="{{item.url}}">
+        <div class="overlay">
+            <p>Gallary</p>
+        </div>
+</div>
+<div class="image-header col-lg-3 col-md-6 col-sm-6 wow fadeInUp" *ngFor="let item of ranarr" 
+  data-wow-delay="0.5s" data-wow-offset="100">
+    
+        <img src="{{item.url}}">
+        <div class="overlay">
+            <p>Gallary</p>
+        </div>
+</div>
+<div class="image-header col-lg-3 col-md-6 col-sm-6 wow fadeInUp" *ngFor="let item of ranarr" 
+  data-wow-delay="0.5s" data-wow-offset="100">
+    
+        <img src="{{item.url}}">
+        <div class="overlay">
+            <p>Gallary</p>
+        </div>
+</div>
+
 </section>

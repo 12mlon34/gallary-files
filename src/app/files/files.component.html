@@ -1,1 +1,187 @@
-<p>files works!</p>
+
+
+
+<section class="container-fluid folder" >
+    <h4>  Files</h4>
+
+    <div class="row text-center content">
+        <div class="col-lg-3 col-md-6 ">
+            <i class="fa fa-folder fa-5x" aria-hidden="true"></i>
+            <p (dblclick)="showMenue()" (click)="renameFolder()" [class.hide]="hiddenP"
+             data-toggle="modal" data-target="#exampleModal">Folder A</p>
+            <p (dblclick)="showMenue()" (click)="renameFolder()">{{Values}}</p>
+            
+              <!-- Model Body -->
+            <div class="modal menu" tabindex="-1" role="dialog" [class.showBlock]="dropDown" [class.myModell]="body">
+                <div class="modal-dialog" role="document" >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title text-center">Create Or Delete Folder</h2>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="originalPosition()">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <label>Folder name</label>
+                      <input class="form-control" type="text" id="inputModel"  placeholder="    Folder name">
+            
+                      <hr>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <button class="btn btn-danger" style="text-transform: capitalize;">click here to delete this folder</button>
+                      </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-light">Cancel</button>
+                      <button type="button"  class="btn btn-primary" data-dismiss="modal">Ok</button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            
+
+            <input type="text"  class="form-control" placeholder="Folder name" [class.hide]="hiddenP"
+
+             [class.renameInput]="renamefolder" (keyup.enter)="inputValue($event)">        
+
+        </div>
+        <div class="col-lg-3 col-md-6 ">
+          <i class="fa fa-folder fa-5x" aria-hidden="true"></i>
+          <p (dblclick)="showMenue()" (click)="renameFolder1()" [class.hide]="hiddenP1" data-toggle="modal" 
+          data-target="#exampleModal">Folder B</p>
+          <p (dblclick)="showMenue()" (click)="renameFolder1()">{{Values1}}</p>
+          
+            <!-- Model Body -->
+          <div class="modal menu" tabindex="-1" role="dialog" [class.showBlock]="dropDown">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title text-center">Create Or Delete Folder</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body pr-3">
+                    <label>Folder name</label>
+                    <input class="form-control " type="text" id="inputModel"  placeholder="Folder name">
+          
+                    <hr>
+                  </div>
+                  
+                  <div class="modal-body">
+                      <button class="btn btn-danger" style="text-transform: capitalize;">click here to delete this folder</button>
+                    </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-light">Cancel</button>
+                    <button type="button"  class="btn btn-primary" data-dismiss="modal">Ok</button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          
+
+          <input type="text"  class="form-control" placeholder="Folder name" [class.hide]="hiddenP1" [class.renameInput]="renamefolder1" (keyup.enter)="inputValue1($event)">        
+
+      </div>
+      <div class="col-lg-3 col-md-6 ">
+        <i class="fa fa-folder fa-5x" aria-hidden="true"></i>
+        <p (dblclick)="showMenue()" (click)="renameFolder2()" [class.hide]="hiddenP2"
+         data-toggle="modal" data-target="#exampleModal">Folder C</p>
+        <p (dblclick)="showMenue()" (click)="renameFolder2()">{{Values2}}</p>
+        
+          <!-- Model Body -->
+        <div class="modal menu" tabindex="-1" role="dialog" [class.showBlock]="dropDown">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title text-center">Create Or Delete Folder</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <label>Folder name</label>
+                  <input class="form-control" type="text" id="inputModel"  placeholder="    Folder name">
+        
+                  <hr>
+                </div>
+                
+                <div class="modal-body">
+                    <button class="btn btn-danger" style="text-transform: capitalize;">click here to delete this folder</button>
+                  </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-light">Cancel</button>
+                  <button type="button"  class="btn btn-primary" data-dismiss="modal">Ok</button>
+                </div>
+              </div>
+            </div>
+          </div> 
+        
+
+        <input type="text"  class="form-control" placeholder="Folder name" [class.hide]="hiddenP2" [class.renameInput]="renamefolder2" (keyup.enter)="inputValue2($event)">        
+
+    </div>
+    <div class="col-lg-3 col-md-6 ">
+      <i class="fa fa-folder fa-5x" aria-hidden="true"></i>
+      <p (dblclick)="showMenue()" (click)="renameFolder3()" [class.hide]="hiddenP3" data-toggle="modal" 
+      data-target="#exampleModal">Folder D</p>
+      <p (dblclick)="showMenue()" (click)="renameFolder3()">{{Values3}}</p>
+      
+        <!-- Model Body -->
+      <div class="modal menu" tabindex="-1" role="dialog" [class.showBlock]="dropDown">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title text-center">Create Or Delete Folder</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <label>Folder name</label>
+                <input class="form-control" type="text" id="inputModel"  placeholder="    Folder name">
+      
+                <hr>
+              </div>
+              
+              <div class="modal-body">
+                  <button class="btn btn-danger" style="text-transform: capitalize;">click here to delete this folder</button>
+                </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-light">Cancel</button>
+                <button type="button"  class="btn btn-primary" data-dismiss="modal">Ok</button>
+              </div>
+            </div>
+          </div>
+        </div> 
+      
+
+      <input type="text"  class="form-control" placeholder="Folder name" [class.hide]="hiddenP2"
+       [class.renameInput]="renamefolder3" (keyup.enter)="inputValue3($event)">        
+
+  </div>
+    </div>
+</section>
+
+ 
+
+
+ <!-- <div class="col-md-6 card-img hover06"> 
+  <img src="//cdn.shopify.com/s/files/1/2452/7833/files/1_d185937e-cdd7-441e-8ae8-bc8d288de844.jpg?v=1509951684"
+    alt="">
+  <div class="overlay">
+    <div class="text">
+      <i class="far fa-eye" data-target="#exampleModalCenter" (click)="openModal(template)"></i>
+      <ng-template #template>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div class="modal-body" id="exampleModalCenter">
+          <img class="imgModel"
+            src="//cdn.shopify.com/s/files/1/2452/7833/files/1_d185937e-cdd7-441e-8ae8-bc8d288de844.jpg?v=1509951684"
+            alt=""> </div>
+      </ng-template>
+    </div>
+  </div>
+</div>  -->

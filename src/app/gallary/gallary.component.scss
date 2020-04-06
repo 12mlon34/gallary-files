@@ -1,6 +1,6 @@
-.container{
+.container-fluid{
     text-align: center;
-    background-color: rgb(204, 204, 233);
+    background-color: rgba(235, 235, 240, 0.122);
 }
 h1{
     font-size: 30px;
@@ -8,10 +8,66 @@ h1{
     font-family: cursive;
     padding: 20px 0;
     color: green;
-    border: 5px solid red;
-    background-color: lighten($color: #000000, $amount: 0);
 }
 
+
 img{
-    margin: 0 0 50px 50px ;
+    margin: 2px;
+    width: 300px;
+    height: 320px;
+    border-radius: 20px;
+}
+.ul-content{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+ul{
+    list-style: none;
+display: flex;
+
+
+text-transform: capitalize;
+}
+.list li a{
+    color:#333;
+    font-weight: bold
+}
+.list li a:hover{
+    background-color: rgb(43, 145, 218);
+    color: #fff;
+    padding:10px 30px;
+}
+
+.image-header
+{
+	position: relative;
+	width: 100%;
+}
+.overlay
+{
+	position: absolute;
+	opacity: 0;
+	width: 80%;
+	height: 100%;
+    display: table;
+     top: 0;
+    left:38px;
+    background-color: rgba(000,000,000,0.5);
+    text-align: center;
+    border-radius: 20px;
+}
+.image-header:hover .overlay
+{
+	transition: 2s;
+   opacity: 1;
+}
+.overlay p
+{
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 80px;
+    color: #fff;
+    font-family: cursive;
 }
